@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CQOnlineRegistrationVC">
+            <connections>
+                <outlet property="onlineRegistrationTableView" destination="BRb-hI-QYK" id="1m0-s4-S9E"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wylaBtn" destination="eXJ-dx-hkO" id="Bts-WV-sCs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRb-hI-QYK">
+                    <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fi5-vP-eAa"/>
+                        <outlet property="delegate" destination="-1" id="kQB-Ph-SA7"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCK-lP-B7C">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-dx-hkO">
+                            <rect key="frame" x="100" y="10" width="175" height="30"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.48627450979999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="PKe-jA-52Y"/>
+                            </constraints>
+                            <state key="normal" title="我要立案">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="newCase:" destination="-1" eventType="touchUpInside" id="CV8-oi-qHd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eXJ-dx-hkO" firstAttribute="leading" secondItem="lCK-lP-B7C" secondAttribute="leading" constant="100" id="3ca-KZ-KTF"/>
+                        <constraint firstItem="eXJ-dx-hkO" firstAttribute="top" secondItem="lCK-lP-B7C" secondAttribute="top" constant="10" id="hFP-Zx-cOL"/>
+                        <constraint firstAttribute="trailing" secondItem="eXJ-dx-hkO" secondAttribute="trailing" constant="100" id="hcf-kz-6UE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BRb-hI-QYK" secondAttribute="trailing" id="0af-fK-ZyE"/>
+                <constraint firstItem="lCK-lP-B7C" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="AHz-x1-LtN"/>
+                <constraint firstItem="lCK-lP-B7C" firstAttribute="top" secondItem="BRb-hI-QYK" secondAttribute="bottom" id="DrH-1X-8x9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="BRb-hI-QYK" secondAttribute="bottom" constant="50" id="GUi-JE-cWe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="lCK-lP-B7C" secondAttribute="bottom" id="ZgH-0a-kwG"/>
+                <constraint firstItem="BRb-hI-QYK" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="44" id="gF9-If-jh8"/>
+                <constraint firstItem="BRb-hI-QYK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jHC-4c-NfZ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="lCK-lP-B7C" secondAttribute="trailing" id="liP-r9-Rwe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="57.5" y="141.5"/>
+        </view>
+    </objects>
+</document>

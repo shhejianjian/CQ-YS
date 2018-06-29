@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1czqvk');
+  src:  url('../fonts/icomoon.eot?1czqvk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1czqvk') format('truetype'),
+    url('../fonts/icomoon.woff?1czqvk') format('woff'),
+    url('../fonts/icomoon.svg?1czqvk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eyes:before {
+  content: "\e913";
+}
+.icon-download:before {
+  content: "\e912";
+}
+.icon-sort-down:before {
+  content: "\e90b";
+}
+.icon-sort-up:before {
+  content: "\e90c";
+}
+.icon-check:before {
+  content: "\e90d";
+}
+.icon-check-empty:before {
+  content: "\e90e";
+}
+.icon-circle-check:before {
+  content: "\e90f";
+}
+.icon-circle-thin:before {
+  content: "\e910";
+}
+.icon-dot-circle:before {
+  content: "\e911";
+}
+.icon-Prompt:before {
+  content: "\e90a";
+}
+.icon-man2:before {
+  content: "\e909";
+}
+.icon-man1:before {
+  content: "\e908";
+}
+.icon-man:before {
+  content: "\e906";
+}
+.icon-woman:before {
+  content: "\e907";
+}
+.icon-choose:before {
+  content: "\e905";
+}
+.icon-close:before {
+  content: "\e900";
+}
+.icon-down:before {
+  content: "\e901";
+}
+.icon-left:before {
+  content: "\e902";
+}
+.icon-right:before {
+  content: "\e903";
+}
+.icon-up:before {
+  content: "\e904";
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CQKTGGSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开庭日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBu-eJ-oXV">
+                    <rect key="frame" x="20" y="50" width="66" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7J-yj-Aeb">
+                    <rect key="frame" x="15" y="80" width="120" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="8WG-hM-QYT"/>
+                        <constraint firstAttribute="height" constant="50" id="G9g-PC-2UC"/>
+                    </constraints>
+                    <connections>
+                        <action selector="clickGGRQBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="P5f-c0-9U8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCO-sz-UBg">
+                    <rect key="frame" x="27" y="90" width="69.5" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="6Wr-W8-t9c"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="eJd-qC-p00"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择法院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrK-Zq-omv">
+                    <rect key="frame" x="20" y="145" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCm-3i-ZPb">
+                    <rect key="frame" x="20" y="186" width="85" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9kq-il-fND"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="iHP-HX-hMl"/>
+                    </constraints>
+                    <state key="normal" title="请选择法院">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickXZFYBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="E4T-KH-c4C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvD-PE-RSx">
+                    <rect key="frame" x="0.0" y="627" width="150" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="PJS-pd-Srf"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="clickCancelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="XFl-lX-nls"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8D-IL-ACU">
+                    <rect key="frame" x="150" y="627" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.53725490200000003" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vXa-sA-OPn"/>
+                    </constraints>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSearchBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="FcL-WY-Qe1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CrK-Zq-omv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4aZ-uP-7hl"/>
+                <constraint firstItem="nvD-PE-RSx" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/2" id="AOc-aW-rf4"/>
+                <constraint firstItem="JCm-3i-ZPb" firstAttribute="top" secondItem="CrK-Zq-omv" secondAttribute="bottom" constant="20" id="LOP-Mr-MYj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nvD-PE-RSx" secondAttribute="bottom" id="MKD-yM-IEA"/>
+                <constraint firstItem="T7J-yj-Aeb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="OVU-kC-dTL"/>
+                <constraint firstItem="JCm-3i-ZPb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="QVG-v2-ojJ"/>
+                <constraint firstItem="nvD-PE-RSx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="S2V-pL-Tm5"/>
+                <constraint firstItem="UCO-sz-UBg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="27" id="TqT-RU-gC2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Y8D-IL-ACU" secondAttribute="trailing" id="UdP-KD-WrE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Y8D-IL-ACU" secondAttribute="bottom" id="X8D-bP-ffw"/>
+                <constraint firstItem="YBu-eJ-oXV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="XMo-jW-6sd"/>
+                <constraint firstItem="CrK-Zq-omv" firstAttribute="top" secondItem="T7J-yj-Aeb" secondAttribute="bottom" constant="15" id="edP-Zb-73A"/>
+                <constraint firstItem="YBu-eJ-oXV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fej-6S-gqm"/>
+                <constraint firstItem="T7J-yj-Aeb" firstAttribute="top" secondItem="YBu-eJ-oXV" secondAttribute="bottom" constant="10" id="igB-vC-T1J"/>
+                <constraint firstItem="UCO-sz-UBg" firstAttribute="top" secondItem="YBu-eJ-oXV" secondAttribute="bottom" constant="20" id="jtL-xQ-MqH"/>
+                <constraint firstItem="Y8D-IL-ACU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/2" id="kus-Ew-L6D"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dateLabel" destination="UCO-sz-UBg" id="h0p-3d-9rr"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="135.5"/>
+        </view>
+    </objects>
+</document>
