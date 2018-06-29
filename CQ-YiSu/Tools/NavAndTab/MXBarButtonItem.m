@@ -41,7 +41,7 @@
         [self setTitleColor:kNavigationBarTintColor forState:UIControlStateNormal];
         [self.titleLabel setFont:kNavigationItemFont];
         [self addTarget:self action:@selector(btnClickAction) forControlEvents:UIControlEventTouchUpInside];
-        self.width = [title sizeWithFont:self.titleLabel.font].width+2;
+        self.width = [title sizeWithFont:self.titleLabel.font].width+30;
     }
     return self;
 }

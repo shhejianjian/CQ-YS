@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E81BD4720E60E6500F75840 /* NativeAPIs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E81BD4520E60E6400F75840 /* NativeAPIs.m */; };
 		B5F49A8B87470AD8BF16AD7D /* libPods-CQ-YiSu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7673E38333AD668E124A66CD /* libPods-CQ-YiSu.a */; };
 		C0210F5A20D24E55008D50C8 /* CQPageStatisticsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0210F5920D24E55008D50C8 /* CQPageStatisticsModel.m */; };
 		C0210F6320D3A6FF008D50C8 /* LDActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = C0210F5D20D3A6FF008D50C8 /* LDActionSheet.m */; };
@@ -203,6 +204,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E81BD4520E60E6400F75840 /* NativeAPIs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAPIs.m; sourceTree = "<group>"; };
+		1E81BD4620E60E6400F75840 /* NativeAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAPIs.h; sourceTree = "<group>"; };
 		2FD1FB717D588EA922531F4F /* Pods-CQ-YiSu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQ-YiSu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CQ-YiSu/Pods-CQ-YiSu.debug.xcconfig"; sourceTree = "<group>"; };
 		7489D3017CDC1B99E4E00A88 /* Pods-CQ-YiSu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CQ-YiSu.release.xcconfig"; path = "Pods/Target Support Files/Pods-CQ-YiSu/Pods-CQ-YiSu.release.xcconfig"; sourceTree = "<group>"; };
 		7673E38333AD668E124A66CD /* libPods-CQ-YiSu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CQ-YiSu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -575,6 +578,8 @@
 		C021540B20C8D4A700F8C7BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1E81BD4620E60E6400F75840 /* NativeAPIs.h */,
+				1E81BD4520E60E6400F75840 /* NativeAPIs.m */,
 				C085B30120C657EB00C4FAA3 /* CQOnlineRegistrationVC.h */,
 				C085B30220C657EB00C4FAA3 /* CQOnlineRegistrationVC.m */,
 				C085B30320C657EB00C4FAA3 /* CQOnlineRegistrationVC.xib */,
@@ -1546,6 +1551,7 @@
 				C021543D20C90FC800F8C7BE /* BRAddressModel.m in Sources */,
 				C085B31820C7A33100C4FAA3 /* CQSignUpVC.m in Sources */,
 				C03E604720D230B800AEDC75 /* CQUploadImageCell.m in Sources */,
+				1E81BD4720E60E6500F75840 /* NativeAPIs.m in Sources */,
 				C085B26B20C5082B00C4FAA3 /* UIViewController+MXNavigation.m in Sources */,
 				C021544C20CA2D0C00F8C7BE /* CQLoginModel.m in Sources */,
 				C067ECFD20E4A8DA00FF0FD7 /* CQKTGGVC.m in Sources */,

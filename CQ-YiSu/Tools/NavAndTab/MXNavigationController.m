@@ -67,7 +67,7 @@
     [super pushViewController:viewController animated:animated];
     
     if (!viewController.mxNavigationItem.leftItem
-        && self.viewControllers.count > 1) {
+        && self.viewControllers.count > 1 && !viewController.mxNavigationItem.leftItems) {
         viewController.mxNavigationItem.leftItem = [[MXBarButtonItem alloc] initWIthImage:@"top_返回" handler:^{
             [viewController.navigationController popViewControllerAnimated:YES];
         }];

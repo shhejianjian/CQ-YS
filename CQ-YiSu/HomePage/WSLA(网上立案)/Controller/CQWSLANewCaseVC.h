@@ -10,5 +10,6 @@
 #import "SXMainVC.h"
 
 @interface CQWSLANewCaseVC : SXMainVC
+@property (nonatomic, copy) NSString *ajbsStr;
 
 @end

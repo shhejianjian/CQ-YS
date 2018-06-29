@@ -179,6 +179,9 @@ extern NSString *checkSucessWsla;
 
 - (IBAction)newCase:(id)sender {
     CQWSLANewCaseVC *vc = [[CQWSLANewCaseVC alloc]init];
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"bcAjbs"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"bcAjlb"];
+    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"bcSpcx"];
     [self.navigationController pushViewController:vc animated:YES];
 
 }
@@ -212,15 +215,21 @@ extern NSString *checkSucessWsla;
 
 //删除
 -(void)clickDeleteBtn:(NSInteger)index{
+//    CQOnlineRegistrationModel *model = self.wslaArr[index];
+//    NSString *ticket = [[NSUserDefaults standardUserDefaults]objectForKey:@"login_ticket"];
+//    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+//    params[@"ajbs"] = model.ajbs;
+//    [GYHttpTool post:wsla_ms ticket:ticket params:nil success:^(id json) {
+//        NSLog(@"json:%@",json);
+//        [self.onlineRegistrationTableView reloadData];
+//    } failure:^(NSError *error) {
+//    }];
+    //修改：
     CQOnlineRegistrationModel *model = self.wslaArr[index];
-    NSString *ticket = [[NSUserDefaults standardUserDefaults]objectForKey:@"login_ticket"];
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"ajbs"] = model.ajbs;
-    [GYHttpTool post:wsla_ms ticket:ticket params:nil success:^(id json) {
-        NSLog(@"json:%@",json);
-        [self.onlineRegistrationTableView reloadData];
-    } failure:^(NSError *error) {
-    }];
+    CQWSLANewCaseVC *vc = [[CQWSLANewCaseVC alloc]init];
+    vc.ajbsStr = model.ajbs;
+    [[NSUserDefaults standardUserDefaults] setObject:model.ajbs forKey:@"bcAjbs"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

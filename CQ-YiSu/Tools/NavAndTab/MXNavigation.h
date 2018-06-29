@@ -10,7 +10,7 @@
 #define MXNavigation_h
 
 #define kNavigationBarTintColor [UIColor whiteColor]
-#define kNavigationItemFont [UIFont systemFontOfSize:16]
+#define kNavigationItemFont [UIFont systemFontOfSize:15]
 #define kNavigationTitleFont [UIFont systemFontOfSize:17]
 
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
